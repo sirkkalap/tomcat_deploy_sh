@@ -2,3 +2,8 @@ tomcat_deploy_sh
 ================
 
 Simple robust tomcat stop, deploy, start shell-scripts for CI and development. Maybe production too, if you feel lucky.
+
+* Solves the problem of shutting down Tomcat synchronously. 
+* Has a timeout and uses force option to really stop a stuck instance
+* Uses netstat / lsof (Darvin) to determine if Tomcat has really been stopped
+* Validates the deployment wars using jar -t
