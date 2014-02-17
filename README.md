@@ -10,4 +10,4 @@ Simple robust tomcat stop, deploy, start shell-scripts for CI and development. M
 
 *NOTE*
 
-Assumes that `url="http://localhost:${TOMCAT_PORT}/$artifact/ping"` returns heartbeat of the deployed app (200 OK). (deploy.sh line 71)
+Assumes that `url="http://localhost:${TOMCAT_PORT}/$artifact/ping"` returns heartbeat of the deployed apps (200 OK). (deploy.sh line 71)
