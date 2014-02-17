@@ -7,6 +7,7 @@ Simple robust tomcat stop, deploy, start shell-scripts for CI and development. M
 * Has a timeout and uses force option to really stop a stuck instance
 * Uses netstat / lsof (Darvin) to determine if Tomcat has really been stopped
 * Validates the deployment wars using jar -t
+* Fails fast and does not try healing spells, chicken bones or suck black magic
 
 *NOTE*
 
